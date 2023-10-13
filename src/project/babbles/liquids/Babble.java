@@ -1,7 +1,7 @@
 package project.babbles.liquids;
 
 public class Babble {
-    final private double VOLUME = 0.3;
+    final private double VOLUME = 0.33;
 
     private double gasComposition;
 
