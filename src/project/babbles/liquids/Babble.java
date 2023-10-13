@@ -1,4 +1,4 @@
-package babbles;
+package project.babbles.liquids;
 
 public class Babble {
     final private double VOLUME = 0.3;

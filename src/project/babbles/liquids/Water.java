@@ -1,4 +1,4 @@
-package babbles;
+package project.babbles.liquids;
 
 public abstract class Water {
     public String color;
