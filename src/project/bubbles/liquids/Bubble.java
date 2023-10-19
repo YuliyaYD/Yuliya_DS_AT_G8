@@ -1,11 +1,11 @@
-package project.babbles.liquids;
+package project.bubbles.liquids;
 
-public class Babble {
+public class Bubble {
     final private double VOLUME = 0.33;
 
     private double gasComposition;
 
-    public Babble(double gasComposition) {
+    public Bubble(double gasComposition) {
         this.gasComposition = gasComposition;
     }
 

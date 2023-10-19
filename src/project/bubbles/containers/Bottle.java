@@ -1,6 +1,6 @@
-package project.babbles.containers;
+package project.bubbles.containers;
 
-import project.babbles.liquids.Water;
+import project.bubbles.liquids.Water;
 
 public class Bottle {
     private double volume;
