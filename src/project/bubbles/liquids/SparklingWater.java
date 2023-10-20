@@ -1,16 +1,20 @@
 package project.bubbles.liquids;
 
-public class SparklingWater extends Water {
-    public Bubble[] bubbles;
+public class SparklingWater extends Water{
+
+    private boolean isOpened;
+    private Bubble[] bubbles;
+
+
+
+    public SparklingWater(String color, String transparency, String smell, int temperature, boolean isOpened) {
+        super(color, transparency, smell, temperature);
+        this.isOpened = isOpened;
+    }
 
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
     }
 
-//    - 1 литр воды содержит 10 тыс пузырьков
-//- у газировки есть метод degas(), который удаляет пузырьки по одному и вызывает их лопанье
 
-    public void degas(double volume){
-
-    }
 }
