@@ -9,15 +9,38 @@ import java.util.regex.Pattern;
 public class ReadFileCountWords {
     public static void main(String[] args) {
         try {
+            BufferedReader reader = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\folder1\\folder2\\folder3\\folder4\\file1.txt"));
 
-            BufferedReader in = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\GitProjects\\file.txt"));
+            String line;
+            int punctuationCount = 0;
+            int wordCount = 0;
 
-            int character;
-            while ((character = in.read()) != -1) {
-                System.out.print((char) character);            }
-            in.close();
+            while ((line = reader.readLine()) != null) {
+                punctuationCount += countPunctuations(line);
+                wordCount += countWords(line);
+            }
+
+            reader.close();
+
+            System.out.println("Number of punctuation marks: " + punctuationCount);
+            System.out.println("Number of words: " + wordCount);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public static int countPunctuations(String text) {
+        Pattern pattern = Pattern.compile("[.,;:!?-]");
+        Matcher matcher = pattern.matcher(text);
+
+        int count = 0;
+        while (matcher.find()) {
+            count++;
+        }
+        return count;
+    }
+    public static int countWords(String text) {
+        String[] words = text.split("\\s+");
+        return words.length;
     }
 }
