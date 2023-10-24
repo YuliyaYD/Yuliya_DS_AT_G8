@@ -8,7 +8,7 @@ public class FileReaderExample {
     public static void main(String[] args) {
         try {
 
-            BufferedReader in = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\GitProjects\\file.txt"));
+            BufferedReader in = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\folder1\\folder2\\folder3\\folder4\\file1.txt"));
 
             int character;
 
