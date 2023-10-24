@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-public class PrintCurrentDateTime5 {
-    public void printCurrentDateTime() {
+public class PrintCurrentDateTime5Static {
+    public static void printCurrentDateTime() {
         LocalDateTime now = LocalDateTime.now();
 
         Locale russian = new Locale("ru", "RU");
