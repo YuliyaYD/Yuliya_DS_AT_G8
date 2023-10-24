@@ -3,11 +3,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+
 public class FileReaderExample {
     public static void main(String[] args) {
         try {
 
-            BufferedReader in = new BufferedReader(new FileReader("C:/Users/Yuliya/IdeaProjects/GitProjects/Yuliya_DS_AT_G8/file.txt"));
+            BufferedReader in = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\GitProjects\\file.txt"));
 
             int character;
 
