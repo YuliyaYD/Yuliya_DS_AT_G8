@@ -7,12 +7,16 @@ import java.io.IOException;
 
 public class FileReaderExample2 {
     public static void main(String[] args) throws IOException {
+        FileReaderExample2.read();
 
-            BufferedReader in = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\GitProjects\\file.txt"));
-            String line;
-            while ((line = in.readLine()) != null) {
-                System.out.println(line);
-            }
-            in.close();
+    }
+    public static void read() throws IOException {
+
+        BufferedReader in = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\GitProjects\\file.txt"));
+        String line;
+        while ((line = in.readLine()) != null) {
+            System.out.println(line);
+        }
+        in.close();
     }
 }
