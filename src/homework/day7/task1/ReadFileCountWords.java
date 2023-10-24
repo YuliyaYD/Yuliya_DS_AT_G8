@@ -9,7 +9,8 @@ import java.util.regex.Pattern;
 public class ReadFileCountWords {
     public static void main(String[] args) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\folder1\\folder2\\folder3\\folder4\\file1.txt"));
+            BufferedReader reader = new BufferedReader
+                    (new FileReader("c:\\Users\\Yuliya\\IdeaProjects\\folder1\\folder2\\folder3\\folder4\\file1.txt"));
 
             String line;
             int punctuationCount = 0;
