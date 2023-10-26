@@ -20,32 +20,39 @@ public class Sandbox {
             System.out.print(sand.getWeight() + " ");
         }
         System.out.println(" ");
-        System.out.println("_____________________________________________");
+        System.out.println("**************************************");
 
         //Проитерировать список через for-each и отпечатать имена в консоль через пробел
         for (Sand sand : sandbox) {
             System.out.print(sand.getName() + " ");
         }
         System.out.println(" ");
-        System.out.println("_____________________________________________");
+        System.out.println("**************************************");
 
         //Создать пустую карту, где ключом является целое число, а значением объект песка
         Map<Integer, Sand> sandMap = new HashMap<>();
 
-        for (int i = 0; i < sandbox.size(); i++) {
-            sandMap.put(i, sandbox.get(i));
-        }
-
-        for (Map.Entry<Integer, Sand> entry : sandMap.entrySet()) {
-            System.out.println(entry.getKey() + " " + entry.getValue());
-        }
-
         //Заполнить карту значениями из предыдущего списка, используя в качестве
         // ключа любое уникальное число
+        sandMap.put(1, new Sand(2, "Речной"));
+        sandMap.put(2, new Sand(4, "Речной"));
+        sandMap.put(3, new Sand(2, "Карьерный"));
+        sandMap.put(4, new Sand(7, "Речной"));
 
+        //Проитерировать карту и отпечатать ключи в консоль
+        for (Integer i : sandMap.keySet()) {
+            System.out.println(i);
+        }
+        System.out.println("**************************************");
 
+        //Проитерировать карту и отпечатать значения в консоль
+        for (Sand sand : sandMap.values()) {
+            System.out.println(sand);
+        }
+        System.out.println("**************************************");
 
-
-
+        for (Map.Entry<Integer, Sand> entry : sandMap.entrySet()) {
+            System.out.println("Ключ: " + entry.getKey() + "; Значение: " + entry.getValue());
+        }
     }
 }
