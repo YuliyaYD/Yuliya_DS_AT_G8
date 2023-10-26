@@ -1,7 +1,6 @@
 package homework.day8.lists;
 
 import homework.day8.precondition.Chair;
-import homework.day8.precondition.Sand;
 
 import java.util.Arrays;
 import java.util.HashMap;
