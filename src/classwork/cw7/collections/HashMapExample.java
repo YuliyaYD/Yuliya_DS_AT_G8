@@ -24,6 +24,8 @@ public class HashMapExample {
             System.out.println(j);
         }
 
+        System.out.println("*******************************************");
+
         for (Map.Entry<Integer, String> entry : words.entrySet()) {
             System.out.println(entry.getKey() + entry.getValue());
 
