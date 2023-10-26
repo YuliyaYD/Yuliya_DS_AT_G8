@@ -15,7 +15,7 @@ public class Butterflies {
         for (String butterfly : butterflies) {
             System.out.println("'" + butterfly + "'");
         }
-        System.out.println("____________________________");
+        System.out.println("*********************************");
 
 
         int counter = 0;
@@ -25,14 +25,14 @@ public class Butterflies {
             }
         }
         System.out.println(counter + " butterflies contains letter \"о\" ");
-        System.out.println("____________________________");
+        System.out.println("*********************************");
 
 
         for (int i = 0; i < butterflies.size(); i++) {
             System.out.print(butterflies.get(i) + " ");
         }
         System.out.println(" ");
-        System.out.println("____________________________");
+        System.out.println("*********************************");
 
 
         for (String butterfly : butterflies) {

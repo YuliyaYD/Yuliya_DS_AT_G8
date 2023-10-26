@@ -19,7 +19,7 @@ public class Noodles {
             sb.append(noodle);
         }
         System.out.println(sb);
-        System.out.println("______________________________");
+        System.out.println("*********************************");
 
 
   //Заменить в каждом слове буквы "а" на букву "о"

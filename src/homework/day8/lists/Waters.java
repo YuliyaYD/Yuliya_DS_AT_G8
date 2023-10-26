@@ -18,7 +18,7 @@ public class Waters {
         for (Water water : waters) {
             System.out.println(water);
         }
-        System.out.println("_____________________________________________");
+        System.out.println("*********************************");
 
         //Проитерировать список через for-each и отпечатать пары цвет-вода через тире в консоль с новой строки
         for (Water water : waters) {

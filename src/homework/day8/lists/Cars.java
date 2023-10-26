@@ -17,7 +17,7 @@ public class Cars {
         for (String car : cars) {
             System.out.println("'" + car + "'");
         }
-        System.out.println("---------------------------");
+        System.out.println("*********************************");
 
         List<String> cars2 = new ArrayList<>();
         for (String car : cars) {
@@ -26,7 +26,7 @@ public class Cars {
             }
         }
         System.out.println(cars2);
-        System.out.println("---------------------------");
+        System.out.println("*********************************");
 
         for (String car : cars) {
             System.out.print(car + " ");

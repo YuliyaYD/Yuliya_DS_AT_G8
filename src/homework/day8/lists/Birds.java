@@ -10,7 +10,7 @@ public class Birds {
         for (String bird : birds) {
             System.out.println("--" + bird + "--");
         }
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
 
         int count = 0;
@@ -21,18 +21,18 @@ public class Birds {
         }
 
         System.out.println("Количество птиц с более чем одной гласной в названии: " + count);
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
 
         for (int i = 0; i < birds.size(); i++) {
             System.out.print(birds.get(i) + " ");
         }
         System.out.println(" ");
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
         birds.set(3, "Синица");
         System.out.println(birds);
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
         for (String bird : birds) {
             System.out.print(bird + " ");

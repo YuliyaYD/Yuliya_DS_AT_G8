@@ -20,21 +20,18 @@ public class People {
             System.out.print(person.getAge() + " ");
         }
         System.out.println(" ");
-        System.out.println("_____________________________________________");
+        System.out.println("*********************************");
 
         //Проитерировать список через for-each и отпечатать имена в консоль через пробел
         for (Person person : people) {
             System.out.print(person.getName() + " ");
         }
         System.out.println(" ");
-        System.out.println("_____________________________________________");
+        System.out.println("*********************************");
 
         //Проитерировать список по индексу и отпечатать людей (.toString()) в консоль с новой строки
         for (int i = 0; i < people.size(); i++) {
             System.out.println(people.get(i).toString());
         }
-
-
-
     }
 }

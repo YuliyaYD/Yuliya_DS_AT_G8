@@ -16,7 +16,7 @@ public class Countries {
             System.out.print(country + ", ");
         }
         System.out.println(" ");
-        System.out.println("---------------------------");
+        System.out.println("*********************************");
 
 
         int counter = 0;
@@ -26,7 +26,7 @@ public class Countries {
             }
         }
         System.out.println("Количество стран, в названии которых меньше 7 букв, - " + counter);
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
 
         for (int i = 0; i < countries.size(); i++) {

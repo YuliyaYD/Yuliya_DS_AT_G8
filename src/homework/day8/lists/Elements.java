@@ -17,7 +17,7 @@ public class Elements {
             System.out.print(element + " ");
         }
         System.out.println(" ");
-        System.out.println("_______________________________");
+        System.out.println("*********************************");
 
         int count = 0;
         for (String element : elements) {
@@ -26,27 +26,27 @@ public class Elements {
             }
         }
         System.out.println("Количество элементов, которые состоят более чем из одного слова: " + count);
-        System.out.println("_______________________________");
+        System.out.println("*********************************");
 
         for (int i = 0; i < elements.size(); i++) {
             System.out.print(elements.get(i) + " ");
         }
         System.out.println(" ");
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
         elements.add(4, "Spinner");
         for (int i = 0; i < elements.size(); i++) {
             System.out.print(elements.get(i) + " ");
         }
         System.out.println(" ");
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
         elements.remove(2);
         for (int i = 0; i < elements.size(); i++) {
             System.out.print(elements.get(i) + " ");
         }
         System.out.println(" ");
-        System.out.println("________________________________");
+        System.out.println("*********************************");
 
         elements.set(5, "Switch");
         for (String element : elements) {

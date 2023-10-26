@@ -18,21 +18,21 @@ public class Bubbles {
         for (Bubble bubble : bubbles) {
             System.out.println(bubble);
         }
-        System.out.println("_____________________________________________");
+        System.out.println("*********************************");
 
         //Проитерировать список через for-each и отпечатать объемы в консоль через пробел
         for (Bubble bubble : bubbles) {
             System.out.print(bubble.getVolume() + " ");
         }
         System.out.println(" ");
-        System.out.println("_____________________________________________");
+        System.out.println("*********************************");
 
         //Проитерировать список через for-each и отпечатать имена в консоль через пробел
         for (Bubble bubble : bubbles) {
             System.out.print(bubble.getName() + " ");
         }
         System.out.println(" ");
-        System.out.println("_____________________________________________");
+        System.out.println("*********************************");
 
         //Посчитать объем всех пузырей и вывести число в консоль
         int counter = 0;
@@ -40,7 +40,7 @@ public class Bubbles {
             counter = counter + bubble.getVolume();
         }
         System.out.println("Объем всех пузырей " + counter);
-        System.out.println("_____________________________________________");
+        System.out.println("*********************************");
 
         //Проитерировать список по индексу и отпечатать пузыри (.toString()) в консоль с новой строки
         for (int i = 0; i < bubbles.size(); i++) {

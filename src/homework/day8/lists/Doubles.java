@@ -11,7 +11,7 @@ public class Doubles {
             System.out.print(ddouble + " ");
         }
         System.out.println(" ");
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 
         //Посчитать произведение всех чисел и вывести результат в консоль
         Double count = 1.0;
@@ -19,7 +19,7 @@ public class Doubles {
             count = count * ddouble;
         }
         System.out.println("Произведение " + count);
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 
 //найти сумму всех дробных частей и вывести результат в консоль
         double sum = 0;
@@ -27,7 +27,7 @@ public class Doubles {
             sum += ddouble - (int) ddouble;
         }
         System.out.println("Сумма всех дробных частей: " + sum);
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 
 //Проитерировать список по индексу и вывести целые части в консоль через пробел
         StringBuilder sb = new StringBuilder();

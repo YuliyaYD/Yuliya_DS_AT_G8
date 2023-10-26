@@ -9,39 +9,35 @@ public class Numbers {
         for (Integer number : numbers) {
             System.out.println(number);
         }
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 //Посчитать сумму всех чисел и вывести результат в консоль
         Integer count = 0;
         for (Integer number : numbers) {
             count = count + number;
         }
         System.out.println("Сумма" + count);
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 //Отсортировать список по возрастанию
         Collections.sort(numbers);
         for (int number : numbers) {
             System.out.println(number);
         }
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 //Проитерировать список по индексу и отпечатать числа в консоль через пробел
         for (int i = 0; i < numbers.size(); i++) {
             System.out.print(numbers.get(i) + " ");
         }
         System.out.println(" ");
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 //Развернуть список в обратном порядке
         Collections.reverse(numbers);
         for (int number : numbers) {
             System.out.println(number);
         }
-        System.out.println("_________________________________________");
+        System.out.println("*********************************");
 //Проитерировать список через for-each и отпечатать числа в консоль через пробел
         for (Integer number : numbers) {
             System.out.print(number + " ");
         }
-
-
-
-
     }
 }
