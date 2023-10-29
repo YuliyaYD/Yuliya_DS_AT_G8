@@ -12,6 +12,7 @@ public class CitiesRunner {
         cities.add("Берлин");
 
         int lettersAmount = cities.stream().mapToInt(city -> city.length()).sum();
-        System.out.println(lettersAmount);//
+        System.out.println(lettersAmount);
+
     }
 }
