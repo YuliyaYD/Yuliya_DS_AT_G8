@@ -36,7 +36,7 @@ public class DoublesStream10 {
 
         // Генерация нового потока случайных чисел
         Stream<Integer> randomStream = roundedStream
-                .flatMap(n -> Stream.generate(() -> random.nextInt(n + 1)).limit(1));
+                .flatMap(n -> Stream.generate(() -> random.nextInt(n + 1)).limit(1)).distinct();
 
         // Вывод результатов
         randomStream.forEach(System.out::println);

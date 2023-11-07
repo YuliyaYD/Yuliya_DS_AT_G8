@@ -1,7 +1,9 @@
 package classwork.cw9.people;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class People {
     public static void main(String[] args) {
@@ -12,8 +14,14 @@ public class People {
                 new Person("Маша", 38, Person.Sex.WOMAN),
                 new Person("Роман", 72, Person.Sex.MAN));
 
-        System.out.println(people.stream().filter(p -> p.age >= 18)
-                .filter(p -> (p.age <= 55)
-                        || (p.sex == Person.Sex.MAN && p.age < 60)).count());
+        people.stream().sorted( (o1, o2) -> {
+            if (o1.sex != o2.sex) {
+                return o1.sex.compareTo(o2.sex);
+            }
+            return o1.age - o2.age;
+        }).peek(p -> System.out.println(p.name)).collect(Collectors.toList());
+
+
+
     }
 }
