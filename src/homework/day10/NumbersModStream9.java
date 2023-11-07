@@ -18,8 +18,10 @@ public class NumbersModStream9 {
 
         //Разбить числа на отдельные цифры и заменить цифры соответствующими словами
         //Оставить только уникальные слова, отсортировать в нисходящем порядке и отпечатать в консоль с новой строки
-        System.out.println(numbersModString.stream().flatMap(s -> Arrays.stream(s.split(""))).collect(Collectors.toList()));
-        System.out.println(numbersModString.stream().flatMap(s -> Arrays.stream(s.split(""))).map(s -> s.replaceAll("0", "ноль"))
+        System.out.println(numbersModString.stream()
+                .flatMap(s -> Arrays.stream(s.split(""))).collect(Collectors.toList()));
+        System.out.println(numbersModString.stream()
+                .flatMap(s -> Arrays.stream(s.split(""))).map(s -> s.replaceAll("0", "ноль"))
                 .map(s -> s.replaceAll("1", "один"))
                 .map(s -> s.replaceAll("2", "два"))
                 .map(s -> s.replaceAll("3", "три"))
@@ -28,6 +30,7 @@ public class NumbersModStream9 {
                 .map(s -> s.replaceAll("6", "шесть"))
                 .map(s -> s.replaceAll("7", "семь"))
                 .map(s -> s.replaceAll("8", "восемь"))
-                .map(s -> s.replaceAll("9", "девять")).distinct().sorted((o1, o2) -> -o1.compareTo(o2)).collect(Collectors.toList()));
+                .map(s -> s.replaceAll("9", "девять"))
+                .distinct().sorted((o1, o2) -> -o1.compareTo(o2)).collect(Collectors.toList()));
     }
 }
